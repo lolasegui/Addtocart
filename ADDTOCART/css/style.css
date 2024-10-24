@@ -59,6 +59,7 @@ ul li{
     background-color: rgb(255, 223, 251);
     padding: 10px;
     border-radius: 8px;
+    flex-grow: 1;
 
 }
 

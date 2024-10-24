@@ -21,8 +21,16 @@ boto.addEventListener("click", function() {
 })
 
 function addElement(e){
-    lista.innerHTML += `<li>${e}</li>`;
+   
+    let elementLlista = document.createElement("li");
+    elementLlista.id=e[0]
+    elementLlista.textContent=e[1];
+    lista.append(elementLlista);
+
 }
+
+
+
 
 function clearScreen(){
     input.value= ""
@@ -33,7 +41,8 @@ function clearList(){
 }
 
 onValue(tasks, function (snapshot) {
-    let resultats =Object.values(snapshot.val())
+
+    let resultats =Object.entries(snapshot.val())
     clearList()
     for (let i=0; i < resultats.length; i++){
         let current= resultats[i]
