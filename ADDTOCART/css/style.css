@@ -44,7 +44,12 @@ button{
     margin: 10px 0;
 }
 
+button:hover{
+    background-color: rgb(229, 137, 238);
+}
+
 ul{
+   
     list-style-type: none;
     padding: 0;
     display: flex;
@@ -67,7 +72,3 @@ ul li:hover{
     background-color: rgb(229, 137, 238);
 }
 
-/*
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">*/
